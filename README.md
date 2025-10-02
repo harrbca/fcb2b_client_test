@@ -74,9 +74,21 @@ Enter SupplierItemSKU for stock check (blank to exit): ABC123
 Request URL: https://your.fcB2Bserver.com/...
 HTTP Status: 200
 --- XML Response ---
-<InventoryInquiryResponse>
-  ...
+<?xml version="1.0" ?>
+<InventoryInquiryResponse xmlns="http://fcb2b.com/schemas/2.0/InventoryServices" xmlns:ml="http://fcb2b.com/schemas/common/2.0/MessageList" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://fcb2b.com/schemas/2.0/InventoryServices InventoryInquiryResponse.xsd http://fcb2b.com/schemas/common/2.0/MessageList ../common/fcB2B-MessageList.xsd">
+  <StockCheck>
+    <DropFlag>false</DropFlag>
+    <ClientIdentifier/>
+    <AvailableShadeOrDyeLot/>
+    <TextDescription>IMPACT LVP SUNSET KHAKI</TextDescription>
+    <RollOrCutFlag>false</RollOrCutFlag>
+    <SupplierItemSKU>CASIMP10</SupplierItemSKU>
+    <AvailableUnitOfMeasure>SF</AvailableUnitOfMeasure>
+    <AvailableQuantity>15604.32</AvailableQuantity>
+    <TimeStamp>2025-10-02T17:39:14Z</TimeStamp>
+  </StockCheck>
 </InventoryInquiryResponse>
+
 ```
 
 Leave the input blank to exit.
