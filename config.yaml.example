@@ -1,0 +1,8 @@
+# config.yaml
+host: #host path eg : des.buckwold.com
+apiKey: anonymous
+secretKey: #your secret key for the anonoymous API
+
+paths:
+  stockcheck: #path to StockCheck eg /danciko/bwl/dancik-b2b/fcb2b/StockCheck
+  relateditems: #path to RelatedItems eg /danciko/bwl/dancik-b2b/fcb2b/RelatedItems
